@@ -23,7 +23,7 @@ I would like to list multiple spaces
 
 ```
 As a signed-up user
-So that I can separate my spaces
+So that I can refer to a particular space
 I would like to name my space
 ```
 
