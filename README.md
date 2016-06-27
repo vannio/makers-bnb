@@ -5,14 +5,14 @@ We would like a web application that allows users to list spaces they have avail
 
 ```
 As a user
-So that I can list a new space
-I would like to sign up
+So I can get show my space
+I would like to list a space
 ```
 
 ```
-As a signed-up user
-So I can get money for my space
-I would like to list a space
+As a user
+So that I can list a new space
+I would like to sign up
 ```
 
 ```
@@ -23,7 +23,7 @@ I would like to list multiple spaces
 
 ```
 As a signed-up user
-So that separate my spaces
+So that I can separate my spaces
 I would like to name my space
 ```
 
@@ -60,7 +60,7 @@ I would like to approve another user's request to hire my space
 ```
 As a signed-up user
 So that two different users don't book the same space on the same night
-I would like to make an already booked space unavailable
+I would like an already booked space to be unavailable
 ```
 
 ```
