@@ -4,9 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var compass = require('node-compass');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var routes = require('./controllers/index');
+var users = require('./controllers/users');
 
 var app = express();
 
@@ -20,7 +21,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('node-compass')({mode: 'expanded'}));
+app.use(compass({
+  mode: 'expanded',
+  project: path.join(__dirname, 'public')
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
