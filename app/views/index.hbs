@@ -1,7 +1,15 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
+<h3>Existing users:</h3>
+<ul>
+{{#each users}}
+<li>{{ email }}</li>
+{{/each}}
+</ul>
+
+<h3>Add new user:</h3>
 <form method="post" action="/users">
-  <input type="text" name="username" placeholder="Username">
+  <input type="email" name="email" placeholder="Email Address">
   <input type="submit" value="Submit">
 </form>

@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// ------------------------------------------------
+// STARTUP SCRIPTS GO IN THIS FILE
+// ------------------------------------------------
+
 /**
  * Module dependencies.
  */
@@ -7,7 +11,6 @@
 var app = require('../app/app');
 var debug = require('debug')('makers-bnb:server');
 var http = require('http');
-
 var models = require("../app/models");
 
 /**
@@ -27,7 +30,7 @@ models.sequelize.sync().then(function() {
 
   /**
    * Listen on provided port, on all network interfaces.
-   */
+  */
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
