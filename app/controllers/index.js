@@ -13,4 +13,8 @@ router.get('/', function(req, res) {
   });
 });
 
+router.post('/users', function(req, res) {
+  console.log(req.params);
+});
+
 module.exports = router;
