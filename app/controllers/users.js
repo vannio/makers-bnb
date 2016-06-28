@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+"use strict";
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+module.exports = function(sequelize, DataTypes){
+  var User = sequelize.define("User", {
+    username: DataTypes.STRING
+  }, {
+    classMethods: {
+      associate: function(models){
+        User.hasMany(models.Task)
+      }
+    }
+  });
 
-module.exports = router;
+  return User;
+};
