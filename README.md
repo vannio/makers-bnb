@@ -3,7 +3,7 @@ We would like a web application that allows users to list spaces they have avail
 
 ## Getting Started
 
-1. Clone this repo
+1. For this repo, then clone it
 1. `cd` into it
 1. Run `bundle install && npm install`
 1. Run `DEBUG=myapp:* npm start` to start the server
