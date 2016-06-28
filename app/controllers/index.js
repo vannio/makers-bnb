@@ -4,7 +4,8 @@ var models  = require('../models');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  models.User.findAll().then(function(users) {
+  models.user.findAll().then(function(users) {
+    console.log(users);
     res.render('index', {
       title: 'Express',
       users: users

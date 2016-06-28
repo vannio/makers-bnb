@@ -6,9 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compass = require('node-compass');
 
-var routes = require('./controllers/index');
-var users = require('./controllers/users');
-
 var app = express();
 
 // view engine setup
@@ -27,8 +24,7 @@ app.use(compass({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/users', users);
+app.use('/', require('./controllers/index'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -60,8 +56,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-
-
 
 module.exports = app;
