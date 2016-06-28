@@ -1,8 +1,18 @@
 # Makers BnB
 We would like a web application that allows users to list spaces they have available, and to hire spaces for the night.
 
-### Pending
+## Getting Started
 
+1. Clone this repo
+1. `cd` into it
+1. Run `bundle install && npm install`
+1. Run `DEBUG=myapp:* npm start` to start the server
+1. Go to [http://localhost:3000](http://localhost:3000)
+
+
+## User Stories
+
+#### Pending
 ```
 As a user
 So I can get show my space
