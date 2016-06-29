@@ -2,9 +2,6 @@
   <input type='submit' value='Homepage'>
 </form>
 <% if current_user %>
-  <!-- <form method='get' action='/spaces/new'>
-    <input type='submit' value='Post a new Peep!'>
-  </form> -->
   <form method='post' action='/sessions'>
     <input type='hidden' name='_method' value='delete'>
     <input type='submit' value='Sign out!'>
