@@ -1,8 +1,9 @@
-<h2>Spaces l0l</h2>
+<h2>Spaces</h2>
 
 <ul>
   <% @spaces.each do |space| %>
   <li>
+    <%= space.user.email %>:
     <%= space.name %>
     <%= space.description %>
     <%= space.price %>
