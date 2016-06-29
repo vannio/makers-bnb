@@ -9,6 +9,7 @@ require_relative "server"
 require_relative "controllers/index"
 require_relative "controllers/spaces"
 require_relative "controllers/users"
+require_relative "controllers/sessions"
 
 
 class Makersbnb < Sinatra::Base

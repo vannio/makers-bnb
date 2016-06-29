@@ -8,7 +8,7 @@ class Makersbnb < Sinatra::Base
       name: params[:name],
       description: params[:description],
       price: params[:price],
-      user_id: current_user
+      user_id: current_user.id
     })
     if @space.id
       erb(:"spaces/index")
