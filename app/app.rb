@@ -8,6 +8,7 @@ require_relative "data_mapper_setup"
 require_relative "server"
 
 require_relative "controllers/index"
+require_relative "controllers/users"
 
 class Makersbnb < Sinatra::Base
   run! if app_file == $0
