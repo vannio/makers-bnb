@@ -1,9 +1,10 @@
-require 'bcrypt'
+require "bcrypt"
 
 class User
   include DataMapper::Resource
 
   attr_writer :password_confirmation
+  attr_reader :password, :password_confirmation
 
   validates_confirmation_of :password
 
@@ -22,8 +23,5 @@ class User
     user if user && BCrypt::Password.new(user.password_digest) == password
   end
 
-  private
-
-  attr_reader :password, :password_confirmation
 
 end
