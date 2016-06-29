@@ -1,17 +1,17 @@
-<form method='get' action='/'>
-  <input type='submit' value='Homepage'>
+<form method="get" action="/">
+  <input type="submit" value="Homepage">
 </form>
 <% if current_user %>
-  <form method='post' action='/sessions'>
-    <input type='hidden' name='_method' value='delete'>
-    <input type='submit' value='Sign out!'>
+  <form method="post" action="/sessions">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Sign out!">
   </form>
   <p>Logged in as: <%= current_user.email %></p>
   <% else %>
-  <form method='get' action='/users/new'>
-    <input type='submit' value='Sign up!'>
+  <form method="get" action="/users/new">
+    <input type="submit" value="Sign up!">
   </form>
-  <form method='get' action='/sessions/new'>
-    <input type='submit' value='Sign in!'>
+  <form method="get" action="/sessions/new">
+    <input type="submit" value="Sign in!">
   </form>
   <% end %>

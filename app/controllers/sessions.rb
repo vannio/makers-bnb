@@ -1,24 +1,24 @@
 class Makersbnb < Sinatra::Base
 
-  get '/sessions/new' do
-    erb(:'sessions/new')
+  get "/sessions/new" do
+    erb(:"sessions/new")
   end
 
-  post '/sessions' do
+  post "/sessions" do
   user = User.authenticate(params[:email], params[:password])
     if user
       session[:user_id] = user.id
-      redirect to('/')
+      redirect to("/")
     else
-      flash.now[:errors] = ['The email or password is incorrect']
-      erb :'sessions/new'
+      flash.now[:errors] = ["The email or password is incorrect"]
+      erb :"sessions/new"
     end
   end
 
-  delete '/sessions' do
+  delete "/sessions" do
     session[:user_id] = nil
-    flash.keep[:notice] = 'Goodbye!'
-    redirect to '/'
+    flash.keep[:notice] = "Goodbye!"
+    redirect to "/"
   end
 
 end
