@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/anthonyepstein/Projects/Makers/week-six/makers-bnb/spec/features/user_signup_spec.rb": [
+      "/Users/Toby/Developing/Projects/Course/makers-bnb/spec/features/user_signup_spec.rb": [
         1,
         1,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -14,6 +14,6 @@
         null
       ]
     },
-    "timestamp": 1467199342
+    "timestamp": 1467200190
   }
 }
