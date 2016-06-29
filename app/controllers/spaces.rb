@@ -2,18 +2,22 @@ class Makersbnb < Sinatra::Base
   get "/spaces/new" do
     erb(:"spaces/new")
   end
-  post "/spaces" do
 
-    @space = Space.create({
+  get "/spaces" do
+    @spaces = Space.all()
+
+    erb(:"spaces/index")
+  end
+
+  post "/spaces" do
+    Space.create({
       name: params[:name],
       description: params[:description],
       price: params[:price],
       user_id: current_user.id
     })
-    if @space.id
-      erb(:"spaces/index")
-    else
-      flash[:errors]= "from incomplete"
-    end
+
+    redirect("/spaces")
   end
+
 end

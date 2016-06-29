@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Ross/Challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
+      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         1,
@@ -14,7 +14,7 @@
         null,
         null
       ],
-      "/Users/Ross/Challenges/makers-bnb/spec/features/sign_in_spec.rb": [
+      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/sign_in_spec.rb": [
         1,
         null,
         1,
@@ -32,7 +32,7 @@
         null,
         null
       ],
-      "/Users/Ross/Challenges/makers-bnb/spec/features/sign_out_spec.rb": [
+      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/sign_out_spec.rb": [
         1,
         null,
         1,
@@ -50,7 +50,7 @@
         null,
         null
       ],
-      "/Users/Ross/Challenges/makers-bnb/spec/features/user_signup_spec.rb": [
+      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/user_signup_spec.rb": [
         1,
         1,
         1,
@@ -63,6 +63,6 @@
         null
       ]
     },
-    "timestamp": 1467209867
+    "timestamp": 1467214290
   }
 }
