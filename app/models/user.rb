@@ -3,8 +3,7 @@ require 'bcrypt'
 class User
   include DataMapper::Resource
 
-  attr_reader :password
-  attr_accessor :password_confirmation
+  attr_writer :password_confirmation
 
   validates_confirmation_of :password
 
@@ -26,5 +25,9 @@ class User
       nil
     end
   end
+
+  private
+
+  attr_reader :password, :password_confirmation
 
 end

@@ -1,5 +1,5 @@
 class Makersbnb < Sinatra::Base
-  get '/' do
+  get "/" do
     erb(:index)
   end
 end
