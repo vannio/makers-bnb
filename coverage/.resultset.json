@@ -1,0 +1,19 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/anthonyepstein/Projects/Makers/week-six/makers-bnb/spec/features/user_signup_spec.rb": [
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1467199342
+  }
+}
