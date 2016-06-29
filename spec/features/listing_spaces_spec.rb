@@ -1,5 +1,6 @@
 feature "listing spaces" do
   scenario "user can list spaces" do
+    sign_up
     visit "/spaces/new"
     fill_in :name, with: "Ross's house"
     fill_in :description, with: "has two rooms"
