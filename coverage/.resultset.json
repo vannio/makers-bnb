@@ -1,19 +1,34 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/Ross/Challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         1,
+=======
+      "/Users/Toby/Developing/Projects/Course/makers-bnb/spec/features/user_signup_spec.rb": [
+>>>>>>> 921e87b1475e79c15a51b6c7ad82e624371f71d2
         1,
         1,
         1,
         1,
+<<<<<<< HEAD
         1,
+=======
+        null,
+        null,
+        1,
+        2,
+>>>>>>> 921e87b1475e79c15a51b6c7ad82e624371f71d2
         null,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1467199986
+=======
+    "timestamp": 1467201041
+>>>>>>> 921e87b1475e79c15a51b6c7ad82e624371f71d2
   }
 }

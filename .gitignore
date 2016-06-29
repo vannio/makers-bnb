@@ -1,3 +1,4 @@
 node_modules/
 app/public/.sass-cache/
 app/public/stylesheets/style.css
+coverage/
