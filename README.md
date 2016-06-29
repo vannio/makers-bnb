@@ -5,11 +5,11 @@ We would like a web application that allows users to list spaces they have avail
 
 1. For this repo, then clone it
 1. `cd` into it
-1. Run `bundle install && npm install`
-1. Create new databases in Postgres: `bnb_test` and `bnb_development`
-1. Run `npm start` to start the server
-1. Go to [http://localhost:3000](http://localhost:3000)
-1. Run `npm test` to start the test suite
+1. Run `bundle install`
+1. Create new databases in Postgres: `makersbnb_test` and `makersbnb_development`
+1. Run `rackup` to start the server
+1. Go to [http://localhost:9292](http://localhost:9292)
+1. Run `rspec` to start the test suite
 
 ## User Stories
 
