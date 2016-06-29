@@ -7,7 +7,7 @@ feature "User sign in" do
   end
 
   scenario "with correct credentials" do
-    sign_in(email: user.email,   password: user.password)
+    sign_in(email: "toby@example.com",   password: "secret1234")
     expect(page).to have_content "#{user.email}"
   end
 
