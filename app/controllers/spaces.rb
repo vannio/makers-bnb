@@ -27,7 +27,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get "/spaces/:id" do
-    p @availabilities = Availability.all(space_id: params[:id])
+    @availabilities = Availability.all(space_id: params[:id])
     erb(:"bookings/new", locals: {space_id: params[:id]})
   end
 

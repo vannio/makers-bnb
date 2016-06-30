@@ -1,5 +1,6 @@
 <a href="/">Homepage</a>
 <% if current_user %>
+  <p><a href="/bookings">My Bookings</a></p>
   <p><a href="/spaces/new">Add a new space</a></p>
   <form method="post" action="/sessions">
     <input type="hidden" name="_method" value="delete">
