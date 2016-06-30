@@ -10,7 +10,7 @@ def sign_up(
   click_button "Submit"
 end
 
-def sign_in(email:, password:)
+def sign_in(email: "cameron@cam.com", password:"cameron")
   visit "/sessions/new"
   fill_in :email, with: email
   fill_in :password, with: password
@@ -26,7 +26,8 @@ def list_space
 end
 
 def user_create
-  User.create(email: "toby@example.com",
-              password: "secret1234",
-              password_confirmation: "secret1234")
+  User.create(
+    email: "toby@example.com",
+    password: "secret1234",
+    password_confirmation: "secret1234")
 end

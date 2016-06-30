@@ -8,13 +8,14 @@ class Makersbnb < Sinatra::Base
       space_id: params[:space_id]
     )
 
-    flash.next[:notice] = "Booking Request for #{params[:booking_date]}"
+    flash.next[:notice] = "Booking Request for #{params[:booking_date]} sent"
 
     redirect("/bookings")
 
   end
 
   get "/bookings" do
+    @bookings = Booking.all(booker_user_id: current_user.id)
     erb(:"bookings/index")
   end
 
