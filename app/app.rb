@@ -11,6 +11,7 @@ require_relative "controllers/spaces"
 require_relative "controllers/users"
 require_relative "controllers/sessions"
 require_relative "controllers/bookings"
+require_relative "models/booking_checker"
 
 class Makersbnb < Sinatra::Base
   run! if app_file == $0
