@@ -90,7 +90,6 @@ I would like to add a price per night to each space
 - 'Chat' between bookers and hosts
 - Payment functionality (with Stripe)
 
-## Mockups
-![Mockups](docs/mockups.pdf)
-
-Domain Modelling (table structure and spaceships) can [be found here](docs/DomainModel.md)
+## Notes
+- Mockups can [be found here](docs/mockups.pdf)
+- Domain Models can [be found here](docs/DomainModel.md)
