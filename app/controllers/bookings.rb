@@ -19,4 +19,10 @@ class Makersbnb < Sinatra::Base
     erb(:"bookings/index")
   end
 
+  post "/bookings/approval" do
+    booking = Booking.get(params[:booking_id])
+    booking.approved = true
+    booking.save
+  end
+
 end
