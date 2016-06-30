@@ -4,7 +4,7 @@
   <% @spaces.each do |space| %>
   <li>
     <%= space.user.email %>:
-    <%= space.name %>
+    <a href="/spaces/<%= space.id %>"><%= space.name %></a>
     <%= space.description %>
     <%= space.price %>
   </li>

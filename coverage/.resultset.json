@@ -1,11 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/booking_spaces_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -16,19 +36,10 @@
       ],
       "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/sign_in_spec.rb": [
         1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
         1,
         1,
         1,
-        null,
-        null,
-        null,
+        1,
         null,
         null
       ],
@@ -63,6 +74,6 @@
         null
       ]
     },
-    "timestamp": 1467214290
+    "timestamp": 1467282335
   }
 }

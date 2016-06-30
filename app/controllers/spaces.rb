@@ -20,4 +20,8 @@ class Makersbnb < Sinatra::Base
     redirect("/spaces")
   end
 
+  get "/spaces/:id" do
+    erb(:"bookings/new", locals: {space_id: params[:id]})
+  end
+
 end
