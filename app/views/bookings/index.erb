@@ -1,0 +1,17 @@
+Requests I've made:
+
+<ul id="outgoing_requests">
+
+  <% @bookings.each do |booking| %>
+  <li>
+    <%= booking.space.name %>
+    <%= booking.booking_date %>
+    <% if booking.approved %>
+      Confirmed
+    <% else %>
+      Pending
+    <% end %>
+  </li>
+  <% end %>
+
+</ul>
