@@ -1,7 +1,30 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
+      "/Users/Ross/Challenges/makers-bnb/spec/features/availability_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Ross/Challenges/makers-bnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         1,
@@ -14,7 +37,7 @@
         null,
         null
       ],
-      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/sign_in_spec.rb": [
+      "/Users/Ross/Challenges/makers-bnb/spec/features/sign_in_spec.rb": [
         1,
         null,
         1,
@@ -32,7 +55,7 @@
         null,
         null
       ],
-      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/sign_out_spec.rb": [
+      "/Users/Ross/Challenges/makers-bnb/spec/features/sign_out_spec.rb": [
         1,
         null,
         1,
@@ -50,7 +73,7 @@
         null,
         null
       ],
-      "/Users/vannio/Projects/makers/challenges/makers-bnb/spec/features/user_signup_spec.rb": [
+      "/Users/Ross/Challenges/makers-bnb/spec/features/user_signup_spec.rb": [
         1,
         1,
         1,
@@ -63,6 +86,6 @@
         null
       ]
     },
-    "timestamp": 1467214290
+    "timestamp": 1467291253
   }
 }

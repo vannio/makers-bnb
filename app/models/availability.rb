@@ -1,9 +1,8 @@
 class Availability
   include DataMapper::Resource
-  belongs_to :user
+  belongs_to :space
 
   property :id, Serial
-  property :space_id, Serial
-  property :date, Date, required: true
-
-end 
+  property :start_date, Date, required: true
+  property :end_date, Date, required: true
+end
