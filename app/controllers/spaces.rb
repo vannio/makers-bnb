@@ -16,6 +16,11 @@ class Makersbnb < Sinatra::Base
       price: params[:price],
       user_id: current_user.id
     })
+    Availability.create({
+      start_date: params[:start_date],
+      end_date: params[:end_date]
+    })
+    flash.next[:notice]="Thanks, available dates are #{params[:start_date]} to  #{params[:end_date]}"
 
     redirect("/spaces")
   end

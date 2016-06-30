@@ -3,6 +3,8 @@ class Space
   belongs_to :user
   has n, :bookings
 
+  has n, :availabilities
+
   property :id, Serial
   property :name, String, required: true
   property :description, String, length: 255

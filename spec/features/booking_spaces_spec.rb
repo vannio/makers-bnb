@@ -10,7 +10,7 @@ feature "Booking a space" do
   end
 
   scenario "clicking a space goes to 'space' page" do
-    expect(current_path).to eq "/spaces/1"
+    expect(current_path).to eq "/spaces/2"
     expect(page).to have_content("Pick a night")
   end
 
