@@ -15,7 +15,6 @@ We would like a web application that allows users to list spaces they have avail
 
 #### Pending
 
-
 ```
 As a signed-up user
 So that I can show when the space is available
@@ -45,6 +44,7 @@ As a signed-up user
 So that a space can still be booked
 I would like the space to be kept available until a request is confirmed
 ```
+
 #### Completed
 
 ```
@@ -82,3 +82,15 @@ As a signed-up user
 So that I can associate a value to my space
 I would like to add a price per night to each space
 ```
+
+#### Nice to have
+- Make the app look bloody awesome
+- Email notifications
+- Text notifications
+- 'Chat' between bookers and hosts
+- Payment functionality (with Stripe)
+
+## Mockups
+![Mockups](docs/mockups.pdf)
+
+Domain Modelling (table structure and spaceships) can [be found here](docs/DomainModel.md)
