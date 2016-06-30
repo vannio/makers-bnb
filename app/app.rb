@@ -10,7 +10,7 @@ require_relative "controllers/index"
 require_relative "controllers/spaces"
 require_relative "controllers/users"
 require_relative "controllers/sessions"
-
+require_relative "controllers/bookings"
 
 class Makersbnb < Sinatra::Base
   run! if app_file == $0
