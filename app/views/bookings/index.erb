@@ -6,6 +6,11 @@ Requests I've made:
   <li>
     <%= booking.space.name %>
     <%= booking.booking_date %>
+    <% if booking.approved %>
+      Confirmed
+    <% else %>
+      Pending
+    <% end %>
   </li>
   <% end %>
 
