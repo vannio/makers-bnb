@@ -1,7 +1,7 @@
 class Makersbnb < Sinatra::Base
   post "/bookings" do
 
-    booking = Booking.create(
+    Booking.create(
       booking_date: params[:booking_date],
       booker_user_id: current_user.id,
       approved: false,
