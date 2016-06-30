@@ -15,3 +15,14 @@ Requests I've made:
   <% end %>
 
 </ul>
+
+Incoming Requests:
+<ul id="incoming_request">
+  <% current_user.spaces.each do |space| %>
+    <% space.bookings.each do |booking| %>
+    <li><%= space.name %>
+      by <%= find_user(booking.booker_user_id).email %>
+      for <%= booking.booking_date %> </li>
+    <% end %>
+  <% end %>
+</ul>
