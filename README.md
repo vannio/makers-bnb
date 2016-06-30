@@ -17,18 +17,6 @@ We would like a web application that allows users to list spaces they have avail
 
 ```
 As a signed-up user
-So that I can show when the space is available
-I would like to offer a range of available dates
-```
-
-```
-As signed-up user
-So that I can hire another user's space for a night
-I would like to request to hire their space
-```
-
-```
-As a signed-up user
 So that I hire out my space for a night
 I would like to approve another user's request to hire my space
 ```
@@ -81,6 +69,18 @@ I would like to provide a short description of my space
 As a signed-up user
 So that I can associate a value to my space
 I would like to add a price per night to each space
+```
+
+```
+As a signed-up user
+So that I can show when the space is available
+I would like to offer a range of available dates
+```
+
+```
+As signed-up user
+So that I can hire another user's space for a night
+I would like to request to hire their space
 ```
 
 #### Nice to have
