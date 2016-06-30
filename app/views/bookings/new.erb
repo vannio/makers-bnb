@@ -1,3 +1,10 @@
+Dates Available:
+<ul>
+<% @availabilities.each do |availability| %>
+<li> <%= availability.start_date %> - <%= availability.end_date %> </li>
+<% end %>
+</ul>
+
 <form method="post" action="/bookings">
   <label for="booking_date">
     Pick a night:
