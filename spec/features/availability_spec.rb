@@ -1,10 +1,4 @@
 feature "adding availability" do
-  scenario "user can state availability of spaces" do
-    sign_up
-    click_link "Add a new space"
-    expect(page).to have_content("Availability")
-  end
-
   scenario "user can select an available date" do
   sign_up
   click_link "Add a new space"
