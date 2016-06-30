@@ -2,7 +2,7 @@ class Space
   include DataMapper::Resource
   belongs_to :user
 
-  has n, :availabilitys
+  has n, :availabilities
 
   property :id, Serial
   property :name, String, required: true
