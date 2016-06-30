@@ -1,1 +1,12 @@
-TEST
+Requests I've made:
+
+<ul id="outgoing_requests">
+
+  <% @bookings.each do |booking| %>
+  <li>
+    <%= booking.space.name %>
+    <%= booking.booking_date %>
+  </li>
+  <% end %>
+
+</ul>
