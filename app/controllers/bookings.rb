@@ -1,14 +1,19 @@
 class Makersbnb < Sinatra::Base
   post "/bookings" do
 
-    Booking.create(
-      booking_date: params[:booking_date],
-      booker_user_id: current_user.id,
-      approved: false,
-      space_id: params[:space_id]
-    )
+    if validate_date(params[:space_id], params[:booking_date])
+      Booking.create(
+        booking_date: params[:booking_date],
+        booker_user_id: current_user.id,
+        approved: false,
+        space_id: params[:space_id]
+      )
+      flash.next[:notice] = "Booking Request for #{params[:booking_date]} sent"
+    else
+      flash.next[:errors] = ["Invalid booking"]
+    end
 
-    flash.next[:notice] = "Booking Request for #{params[:booking_date]} sent"
+
 
     redirect("/bookings")
 
