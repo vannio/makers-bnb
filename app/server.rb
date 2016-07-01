@@ -17,6 +17,13 @@ class Makersbnb < Sinatra::Base
    def find_user(id)
      User.get(id)
    end
+
+   def validate_date(space_id, booking_date)
+     availabilities = Availability.all(space_id: space_id)
+     bookings = Booking.all(space_id: space_id)
+
+     BookingChecker.new.valid?(availabilities, bookings, booking_date)
+   end
   end
 
 end
