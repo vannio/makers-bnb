@@ -1,16 +1,25 @@
 feature "Booking Approvals" do
   scenario "user can approve booking requests" do
     user = user_create
-    Space.create(
+
+    space = Space.create(
       name: "Toby's House",
       description: "Has 13 Rooms",
       price: 1001,
       user_id: user.id
     )
+
+    Availability.create(
+      start_date: "2016-01-01",
+      end_date: "2018-01-01",
+      space_id: space.id
+    )
+
     User.create(
       email: "cammy@example.com",
       password: "secret1234",
       password_confirmation: "secret1234")
+      
     sign_in(email: "cammy@example.com", password: "secret1234")
 
     click_link("Toby's House")

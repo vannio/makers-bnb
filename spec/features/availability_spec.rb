@@ -10,7 +10,5 @@ feature "adding availability" do
   click_button :submit
   expect(page).to have_content("2016-01-01")
   expect(page).to have_content("2016-01-02")
-
-
   end
 end
