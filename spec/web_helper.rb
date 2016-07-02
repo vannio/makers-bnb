@@ -22,6 +22,8 @@ def list_space
   fill_in :name, with: "Ross's house"
   fill_in :description, with: "has two rooms"
   fill_in :price, with: 100
+  fill_in :start_date, with: "2016-01-01"
+  fill_in :end_date, with: "2018-01-01"
   click_button :submit
 end
 
