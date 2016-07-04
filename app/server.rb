@@ -25,5 +25,5 @@ class Makersbnb < Sinatra::Base
      BookingChecker.new.valid?(availabilities, bookings, booking_date)
    end
   end
-
+  
 end

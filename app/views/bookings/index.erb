@@ -1,3 +1,5 @@
+<h2> Bookings </h2>
+
 Requests I've made:
 
 <ul id="outgoing_requests">
@@ -16,18 +18,34 @@ Requests I've made:
 
 </ul>
 
-Incoming Requests:
-<ul id="incoming_requests">
+Pending Requests:
+<ul id="pending_requests">
   <% current_user.spaces.each do |space| %>
     <% space.bookings.each do |booking| %>
-    <li><%= space.name %>
-      by <%= find_user(booking.booker_user_id).email %>
-      for <%= booking.booking_date %>
-      <form action="/bookings/approval" method="post"> 
-        <input type="hidden" name="booking_id" value="<%= booking.id %>">
-        <input type="submit" name="approve" value="Approve">
-      </form>
-    </li>
+      <% unless booking.approved %>
+        <li><%= space.name %>
+          by <%= find_user(booking.booker_user_id).email %>
+          for <%= booking.booking_date %>
+          <form action="/bookings/approval" method="post">
+            <input type="hidden" name="booking_id" value="<%= booking.id %>">
+            <input type="submit" name="approve" value="Approve">
+          </form>
+        </li>
+      <% end %>
+    <% end %>
+  <% end %>
+</ul>
+
+Approved Bookings:
+<ul id="approved_bookings">
+  <% current_user.spaces.each do |space| %>
+    <% space.bookings.each do |booking| %>
+      <% if booking.approved %>
+        <li><%= space.name %>
+          by <%= find_user(booking.booker_user_id).email %>
+          for <%= booking.booking_date %>
+        </li>
+      <% end %>
     <% end %>
   <% end %>
 </ul>

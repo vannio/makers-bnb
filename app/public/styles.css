@@ -1,5 +1,5 @@
 body{
-  font-family: 'EB Garamond', serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
 }
 
@@ -59,9 +59,42 @@ nav .logged-in {
   padding-left: 0;
 }
 
-.spaces_list li {
-  border: solid 4px #00CDCD;
+.spaces_list li,
+#outgoing_requests,
+#pending_requests,
+#approved_bookings,
+.available_list {
+  border: solid 2px #00CDCD;
   margin-bottom: 2.5em;
   padding: 1em;
   border-radius: 8px;
+}
+
+#outgoing_requests,
+.available_list,
+#pending_requests,
+#approved_bookings {
+  padding: 1em 2em;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"] {
+  border: solid 1px #00CDCD;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.logo {
+  float: left;
+}
+
+.nav_links {
+  text-align: right;
 }
