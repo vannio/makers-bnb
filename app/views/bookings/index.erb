@@ -17,7 +17,7 @@ Requests I've made:
 </ul>
 
 Pending Requests:
-<ul id="incoming_requests">
+<ul id="pending_requests">
   <% current_user.spaces.each do |space| %>
     <% space.bookings.each do |booking| %>
       <% unless booking.approved %>
@@ -35,7 +35,7 @@ Pending Requests:
 </ul>
 
 Approved Bookings:
-<ul id="incoming_requests">
+<ul id="approved_bookings">
   <% current_user.spaces.each do |space| %>
     <% space.bookings.each do |booking| %>
       <% if booking.approved %>
