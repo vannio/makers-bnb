@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Makers BnB!</title>
+    <title>MakersBnB</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand" rel="stylesheet">
   </head>
   <body>
-    <%= partial :welcome %>
+    <%= partial :navigation %>
+    <div class="wrapper">
     <%= partial :flash %>
     <%= yield %>
+    </div>
   </body>
 </html>
