@@ -1,0 +1,20 @@
+<nav>
+  <div class="wrapper">
+  <a href="/">Homepage</a>
+  <% if current_user %>
+    <a href="/bookings">My Bookings</a>
+    <a href="/spaces/new">Add a new space</a>
+    <form method="post" action="/sessions">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Sign out!">
+    </form>
+    <span class="logged-in"><%= current_user.email %></span>
+  <% else %>
+    <form method="get" action="/users/new">
+      <input type="submit" value="Sign up!">
+    </form>
+    <form method="get" action="/sessions/new">
+      <input type="submit" value="Sign in!">
+    </form>
+<% end %>
+  </div></nav>

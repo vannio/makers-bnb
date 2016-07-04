@@ -1,0 +1,67 @@
+body{
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #00CDCD;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+nav{
+  background-color: #00CDCD;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
+  padding-bottom: 0.2em;
+}
+nav a,
+nav input[type="submit"]{
+  background-color: transparent;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav form{
+  display: inline-block;
+
+}
+
+nav .logged-in {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.spaces_list h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.spaces_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.spaces_list li {
+  border: solid 4px #00CDCD;
+  margin-bottom: 2.5em;
+  padding: 1em;
+  border-radius: 8px;
+}

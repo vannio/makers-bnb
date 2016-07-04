@@ -1,11 +1,11 @@
 <h2>Spaces</h2>
 
-<ul>
+<ul class="spaces_list">
   <% @spaces.each do |space| %>
   <li>
-    <%= space.user.email %>:
-    <a href="/spaces/<%= space.id %>"><%= space.name %></a>
-    <%= space.description %>
+    <h4><a href="/spaces/<%= space.id %>"><%= space.name %></a></h4>
+    <%= space.user.email %>
+    <p><%= space.description %></p>
     <%= space.price %>
   </li>
   <% end %>
