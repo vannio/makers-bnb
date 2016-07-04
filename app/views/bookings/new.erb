@@ -1,5 +1,7 @@
+<h2> <%= @space.name %> </h2>
+
 Dates Available:
-<ul>
+<ul class="available_list"> 
 <% @availabilities.each do |availability| %>
 <li> <%= availability.start_date %> - <%= availability.end_date %> </li>
 <% end %>

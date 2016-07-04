@@ -1,7 +1,7 @@
 <nav>
   <div class="wrapper">
-  <a href="/">Homepage</a>
-  <% if current_user %>
+  <a class="logo" href="/">MakersBnB</a>
+<div class="nav_links"> <% if current_user %>
     <a href="/bookings">My Bookings</a>
     <a href="/spaces/new">Add a new space</a>
     <form method="post" action="/sessions">
@@ -16,5 +16,5 @@
     <form method="get" action="/sessions/new">
       <input type="submit" value="Sign in!">
     </form>
-<% end %>
+<% end %> </div>
   </div></nav>
