@@ -28,6 +28,7 @@ class Makersbnb < Sinatra::Base
     booking = Booking.get(params[:booking_id])
     booking.approved = true
     booking.save
+    redirect("/bookings")
   end
 
 end
